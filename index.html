@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Suite de Algoritmos & Depuração</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <h1>⚡ Suite de Algoritmos</h1>
+      <p>Execute e teste todos os 6 algoritmos de forma interativa no navegador</p>
+    </header>
+
+    <!-- NAVEGAÇÃO POR ABAS -->
+    <div class="nav-tabs">
+      <button class="tab-btn active" data-target="card-primo">1. Número Primo</button>
+      <button class="tab-btn" data-target="card-somatorio">2. Somatório</button>
+      <button class="tab-btn" data-target="card-fibonacci">3. Fibonacci</button>
+      <button class="tab-btn" data-target="card-quicksort">4. Quicksort</button>
+      <button class="tab-btn" data-target="card-contagem">5. Contagem</button>
+      <button class="tab-btn" data-target="card-mdc">6. Máximo Divisor</button>
+    </div>
+
+    <!-- 1. NÚMERO PRIMO -->
+    <div class="algo-card active" id="card-primo">
+      <h2>Verificador de Número Primo</h2>
+      <p class="description">Verifica se um determinado número inteiro $N$ é um número primo (divisível apenas por 1 e por ele mesmo).</p>
+      
+      <div class="form-group">
+        <label for="input-primo">Digite um número inteiro:</label>
+        <input type="number" id="input-primo" placeholder="Ex: 97" value="97">
+      </div>
+      
+      <button class="btn-execute" id="btn-primo">Verificar Primo</button>
+
+      <div class="result-box">
+        <div class="result-title">Resultado</div>
+        <div class="result-content" id="res-primo">Clique em "Verificar Primo" para testar.</div>
+      </div>
+    </div>
+
+    <!-- 2. SOMATÓRIO -->
+    <div class="algo-card" id="card-somatorio">
+      <h2>Somatório de Array</h2>
+      <p class="description">Recebe um array de números (separados por vírgula) e calcula a soma de todos os seus elementos.</p>
+      
+      <div class="form-group">
+        <label for="input-somatorio">Digite os números separados por vírgula:</label>
+        <input type="text" id="input-somatorio" placeholder="Ex: 10, 20.5, 30, -5, 4.5" value="10, 20.5, 30, -5, 4.5">
+      </div>
+      
+      <button class="btn-execute" id="btn-somatorio">Calcular Somatório</button>
+
+      <div class="result-box">
+        <div class="result-title">Resultado</div>
+        <div class="result-content" id="res-somatorio">Clique em "Calcular Somatório" para testar.</div>
+      </div>
+    </div>
+
+    <!-- 3. FIBONACCI -->
+    <div class="algo-card" id="card-fibonacci">
+      <h2>Gerador de Fibonacci</h2>
+      <p class="description">Gera a sequência de Fibonacci até a quantidade $N$ de termos e identifica o $N$-ésimo termo.</p>
+      
+      <div class="form-group">
+        <label for="input-fibonacci">Quantidade de termos (N):</label>
+        <input type="number" id="input-fibonacci" placeholder="Ex: 10" value="10" min="1">
+      </div>
+      
+      <button class="btn-execute" id="btn-fibonacci">Gerar Fibonacci</button>
+
+      <div class="result-box">
+        <div class="result-title">Resultado</div>
+        <div class="result-content" id="res-fibonacci">Clique em "Gerar Fibonacci" para testar.</div>
+      </div>
+    </div>
+
+    <!-- 4. QUICKSORT -->
+    <div class="algo-card" id="card-quicksort">
+      <h2>Ordenação Quicksort</h2>
+      <p class="description">Ordena um array de números desordenados utilizando o algoritmo de divisão e conquista Quicksort.</p>
+      
+      <div class="form-group">
+        <label for="input-quicksort">Digite os números a serem ordenados (separados por vírgula):</label>
+        <input type="text" id="input-quicksort" placeholder="Ex: 34, 7, 23, 32, 5, 62, 1, 9, -3" value="34, 7, 23, 32, 5, 62, 1, 9, -3">
+      </div>
+      
+      <button class="btn-execute" id="btn-quicksort">Ordenar com Quicksort</button>
+
+      <div class="result-box">
+        <div class="result-title">Resultado</div>
+        <div class="result-content" id="res-quicksort">Clique em "Ordenar com Quicksort" para testar.</div>
+      </div>
+    </div>
+
+    <!-- 5. CONTAGEM -->
+    <div class="algo-card" id="card-contagem">
+      <h2>Contagem de Inteiros no Intervalo</h2>
+      <p class="description">Analisa o primeiro e o último elemento de um array e conta quantos inteiros existem no intervalo entre eles.</p>
+      
+      <div class="form-group">
+        <label for="input-contagem">Digite os números do array (separados por vírgula):</label>
+        <input type="text" id="input-contagem" placeholder="Ex: 2.5, 7, 3, 10, 4.2, 8" value="2.5, 7, 3, 10, 4.2, 8">
+      </div>
+      
+      <button class="btn-execute" id="btn-contagem">Calcular Contagem</button>
+
+      <div class="result-box">
+        <div class="result-title">Resultado</div>
+        <div class="result-content" id="res-contagem">Clique em "Calcular Contagem" para testar.</div>
+      </div>
+    </div>
+
+    <!-- 6. MÁXIMO DIVISOR COMUM -->
+    <div class="algo-card" id="card-mdc">
+      <h2>Máximo Divisor Comum (MDC / GCD)</h2>
+      <p class="description">Calcula o maior inteiro que divide exatamente todos os números informados (Algoritmo de Euclides).</p>
+      
+      <div class="form-group">
+        <label for="input-mdc">Digite os números para o MDC (separados por vírgula):</label>
+        <input type="text" id="input-mdc" placeholder="Ex: 48, 18 ou 24, 36, 60" value="48, 18">
+      </div>
+      
+      <button class="btn-execute" id="btn-mdc">Calcular MDC</button>
+
+      <div class="result-box">
+        <div class="result-title">Resultado</div>
+        <div class="result-content" id="res-mdc">Clique em "Calcular MDC" para testar.</div>
+      </div>
+    </div>
+
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
