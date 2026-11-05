@@ -29,10 +29,4 @@ function quicksort(arr) {
   return [...quicksort(menores), ...iguais, ...quicksort(maiores)];
 }
 
-// Testes de exemplo
-const desordenado = [34, 7, 23, 32, 5, 62, 1, 9, 5, 0, -3];
-console.log("--- Quicksort ---");
-console.log("Array Desordenado:", desordenado);
-console.log("Array Ordenado:   ", quicksort(desordenado));
-
 module.exports = { quicksort };

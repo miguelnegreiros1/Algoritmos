@@ -29,16 +29,4 @@ function contarInteirosEntrePrimeiroEUltimo(arr) {
   return { contagemIntervalo, contagemElementosArray };
 }
 
-// Testes de exemplo
-const testeArray1 = [2.5, 7, 3, 10, 4.2, 8]; // primeiro: 2.5, último: 8 -> inteiros no intervalo (2.5, 8): 3, 4, 5, 6, 7 (total: 5)
-console.log("--- Contagem de Inteiros entre Primeiro e Último ---");
-console.log("Array 1:", testeArray1);
-console.log("Resultado 1:", contarInteirosEntrePrimeiroEUltimo(testeArray1));
-
-const testeArray2 = [10, 15, 3.5, 2]; // primeiro: 10, último: 2 -> inteiros no intervalo (2, 10): 3, 4, 5, 6, 7, 8, 9 (total: 7)
-console.log("Array 2:", testeArray2);
-console.log("Resultado 2:", contarInteirosEntrePrimeiroEUltimo(testeArray2));
-
 module.exports = { contarInteirosEntrePrimeiroEUltimo };
-
-// Teste de sincronização com o GitHub3

@@ -1,0 +1,9 @@
+{
+  "name": "algoritmos",
+  "version": "1.0.0",
+  "description": "Algoritmos e testes automatizados",
+  "scripts": {
+    "postinstall": "npm install --prefix javascript",
+    "test": "npm test --prefix javascript"
+  }
+}

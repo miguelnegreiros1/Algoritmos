@@ -33,9 +33,4 @@ function obterNesimoFibonacci(n) {
   return b;
 }
 
-// Testes de exemplo
-console.log("--- Sequência de Fibonacci & Termo N ---");
-console.log("Primeiros 10 termos:", gerarSequenciaFibonacci(10));
-console.log("10º termo de Fibonacci:", obterNesimoFibonacci(10));
-
 module.exports = { gerarSequenciaFibonacci, obterNesimoFibonacci };

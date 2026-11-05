@@ -16,11 +16,4 @@ function ePrimo(n) {
   return true;
 }
 
-// Testes de exemplo
-const numerosTeste = [-5, 0, 1, 2, 3, 4, 17, 20, 29, 97, 100];
-console.log("--- Verificação de Número Primo ---");
-numerosTeste.forEach(num => {
-  console.log(`${num} é primo? -> ${ePrimo(num)}`);
-});
-
 module.exports = { ePrimo };

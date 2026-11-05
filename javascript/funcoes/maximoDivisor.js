@@ -33,11 +33,4 @@ function mdcArray(arr) {
   return resultado;
 }
 
-// Testes de exemplo
-console.log("--- Máximo Divisor Comum (MDC / GCD) ---");
-console.log("MDC(48, 18):", maximoDivisorComum(48, 18));   // Deve retornar 6
-console.log("MDC(100, 25):", maximoDivisorComum(100, 25)); // Deve retornar 25
-console.log("MDC(17, 13):", maximoDivisorComum(17, 13));   // Deve retornar 1 (primos entre si)
-console.log("MDC do Array [24, 36, 60]:", mdcArray([24, 36, 60])); // Deve retornar 12
-
 module.exports = { maximoDivisorComum, mdcArray };

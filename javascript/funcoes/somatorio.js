@@ -10,10 +10,4 @@ function calcularSomatorio(arr) {
   return arr.reduce((acc, curr) => acc + curr, 0);
 }
 
-// Testes de exemplo
-const arrayExemplo = [10, 20.5, 30, -5, 4.5];
-console.log("--- Somatório ---");
-console.log(`Array: [${arrayExemplo.join(", ")}]`);
-console.log(`Soma Total: ${calcularSomatorio(arrayExemplo)}`);
-
 module.exports = { calcularSomatorio };
