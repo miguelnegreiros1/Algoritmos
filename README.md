@@ -6,8 +6,10 @@ Página web com os algoritmos: https://miguelnegreiros1.github.io/Algoritmos/
 Vídeo Debugging: https://www.youtube.com/watch?v=gNIyXRH__QU
 
 ### Como testar as funções JavaScript com Jest:
-clone o repositório
+Clone o repositório
 
-na pasta root -
+##### Na pasta root -
+
 npm install
+
 npm test
