@@ -13,3 +13,5 @@ Clone o repositório
 npm install
 
 npm test
+
+<img width="584" height="448" alt="Captura de tela 2026-11-10 174734" src="https://github.com/user-attachments/assets/c55bb9d3-1e5e-4433-8efb-6a0c81e20c69" />
